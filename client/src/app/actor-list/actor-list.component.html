@@ -1,0 +1,18 @@
+<h3>Liste des acteurs</h3>
+<hr>
+
+<div>
+
+    <ul class="list-group">
+    	<li *ngFor="let actor of actorsList" 
+			class="list-group-item"
+			(click)="actorSelected(actor)"
+			[class.active]="isSelected(actor)">
+			<div class="badge " style=" background-color:#DC143C;
+  border: 0;" (click)="deleteActor(actor.id)">X</div>
+			<h4>{{ actor.name}}</h4>
+			<small>{{ actor.birth_year}}</small>
+			
+		</li>
+	</ul>
+</div>

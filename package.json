@@ -1,0 +1,38 @@
+{
+  "name": "chapter2",
+  "version": "0.0.0",
+  "description": "Blueprints - Chapter 2",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "gulp test",
+    "testing": "gulp testing",
+    "test-mocha": "mocha --reporter spec",
+    "start": "gulp server",
+    "cover": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha -- --recursive -R spec",
+    "lint": "./node_modules/.bin/jshint test src"
+  },
+  "author": "AxiomZen",
+  "homepage": "https://github.com/axiomzen/blueprints-ch2",
+  "dependencies": {
+    "body-parser": "^1.5.2",
+    "express": "^4.7.2",
+    "mocha": "^1.21.5",
+    "mongoose": "^4.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-express": "^0.3.5",
+    "gulp-istanbul": "^1.1.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-mocha": "^4.0.1",
+    "gulp-util": "^3.0.8",
+    "istanbul": "^0.4.5",
+    "jshint": "^2.9.4",
+    "mocha": "^1.21.3",
+    "should": "^4.0.4",
+    "supertest": "^0.13.0"
+  }
+}

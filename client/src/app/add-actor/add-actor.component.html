@@ -1,0 +1,34 @@
+<h3 >Ajouter/Modifier acteur </h3>
+<hr>
+
+<div class="form-group">
+    Nom : 
+    <input class="form-control"
+		type ="text"
+		placeholder="Le nom du film."
+		name= "title"
+		[(ngModel)]="actor.name">
+</div>
+
+<!--<div class="form-group">
+	Année : 
+	<select class="form-control" name="year" [(ngModel)]="movie.title">
+		<option value='m'> Male </option>
+		<option value='f'> Female </option>
+	</select>
+</div>-->
+
+<div class="form-group">
+	Année : 
+	<input class="form-control"
+		type ="text"
+		placeholder="L'année du film."
+		name="year"
+		[(ngModel)]="actor.birth_year">
+</div>
+
+<div class="form-group">
+	<button *ngIf="isInsert" class="btn btn-primary" (click)="addActor()">Ajouter acteur</button> 
+    <button  *ngIf="!isInsert" class="btn btn-primary" (click)="updateActor()">Mettre à jour</button>
+	 
+</div>
