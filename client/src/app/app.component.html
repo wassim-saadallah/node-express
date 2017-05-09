@@ -1,17 +1,19 @@
-<div class="container">
+
 
    <!-- <h1 class="text-center">
     	{{title}}
 	</h1>-->
-	<br>
-	<div class="center">
-<ul class="nav nav-tabs nav-justified">
-  <li role="presentation"><a href="movies">Movies</a></li>
-  <li role="presentation"><a href="actors">Actors</a></li>
-  
-</ul>
+ <nav class="navbar navbar-inverse">
+  <div class="navbar-header">
+      <a class="navbar-brand" href="actors">MyMoviesApp</a>
+  </div>
+ <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="actors">Actors</a></li>
+        <li><a href="movies">movies</a></li>
+      </ul>
+ </div>
+</nav>
+<div class="container">
 <router-outlet></router-outlet>
-</div>
- 
-
 </div>

@@ -8,11 +8,13 @@
 			class="list-group-item"
 			(click)="actorSelected(actor)"
 			[class.active]="isSelected(actor)">
-			<div class="badge " style=" background-color:#DC143C;
-  border: 0;" (click)="deleteActor(actor.id)">X</div>
+			<div class="row">
 			<h4>{{ actor.name}}</h4>
 			<small>{{ actor.birth_year}}</small>
-			
+			<button type="button" class="btn btn-danger" aria-label="Right Align" (click)="deleteActor(actor.id)">
+  				<span class="glyphicon glyphicon-trash" aria-hidden="true"> supprimer</span>
+			</button>
+			</div>
 		</li>
 	</ul>
 </div>

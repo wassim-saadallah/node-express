@@ -13,6 +13,7 @@ module.exports = {
 
 
   createOne: function(req, res, next) {
+    console.log(req.body);
     Actor.create(req.body, function(err, actor) {
       if (err) return res.status(400).json(err);
 
