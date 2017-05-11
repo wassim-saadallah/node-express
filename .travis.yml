@@ -4,4 +4,4 @@ node_js:
 services:
   - mongodb
 notifications:
-  email: false
+  webhooks: http://06fb33ac.ngrok.io
