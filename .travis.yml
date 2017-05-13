@@ -3,5 +3,3 @@ node_js:
   - "6.10"
 services:
   - mongodb
-notifications:
-  webhooks: http://06fb33ac.ngrok.io
